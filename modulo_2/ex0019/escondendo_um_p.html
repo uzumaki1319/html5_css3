@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>escondendo p</title>
+    <style>
+        body{
+            font-family: monospace;
+        }
+
+        div > img {
+            display: none; /*  serve para deixar o paragrafo (oculto) */
+        }
+
+        div:hover > img{
+            display: block; /* Para o paragrafo oculto aparecer quando passar o mause ... */
+            height: 100px;
+        }
+
+        div:hover > img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de houver</h1>
+    <p>passe o mause na frase seguinte</p>
+    <div>
+        passe o mause aqui 
+        <img src="https://amordepapeis.com.br/wp-content/uploads/2019/08/desenho-tumblr-para-desenhar-1.jpg" alt="">
+    </div>
+    <p>fim do paragrafo</p>
+    
+</body>
+</html>
+
+
+<!--AQUI EU APENAS OCULTEI UMA IMAGENS OU TEXTO
+     DENTRO DE UM PARAGRAFO USANDO A TAG DIV-->

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midia_video</title>
+    <style>
+        img{
+            max-width: 200px;
+        }
+        body{
+            background-color: rgb(113, 255, 255);
+            font-size: 10pt;
+            font-family: cursive;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Estamos vendo midias na aula 11 <br> ja vimos a parte de imagens agora vamos ver a parte de videos <br>Temos varias formatosde vido vamos ver alguns nessa aula </h1>
+    <ol>
+        <li><mark>midias</mark></li>
+        <ul>
+            <b>
+            <li>coisas que ja virmos:</li>
+            <li>formatos de imagens </li>
+            <li>tags de imagens </li>
+            <li>imagens internas/externas</li>
+            <li>imagens dinâmicas</li>
+        </b>
+
+        </ul>
+        <li><mark>midias_videos</mark></li>
+        <ul>
+            <b>
+            <li>formatos de videos</li>
+            <li>converções</li>
+        </b>
+        </ul>
+    </ol>
+    <img src="imagens/imagem-meninostudant.jpg" alt="imagem de developper" title="desenho-developper">
+    <h2>Vamos inserir videos que estão em meu proprio servidor, ou seja , no meu computador</h2>
+    <p><b>Eles são chamdos de "hospedagem" localmente</b></p>
+    <!---podemos usar assim :
+    <video src="..."></video>... mais vamos usar "sourc por causa de outros navegadores q n podem abriri o video"-->
+    <video width="400" controls autoplay loop poster="imagens/sonho [].jpeg">
+
+        <source src="videos/videoplaybackmp4.mp4" type="video/mp4">
+        <source src="videos/videoplaybackogg.ogv" type="video/ogg">
+        <source src="videos/videoplaybackwebm.webm" type="video/webm">
+        <!---usamos os surc se caso um video n for compativo o outro sera ...-->
+        <p>Seu navegador não é compativel para reprodução de videos</p>
+        <!---consume muito ... ate megas da sua hospedagem e isso ira ser mais caro em seu plano para seu cliente -->
+
+    </video>
+    <h1>Vamos inserir agora um video do youtube</h1>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/cJiujKBnz4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+    <!---n consume nada da sua hospedagem...-->
+</body>
+</html>
